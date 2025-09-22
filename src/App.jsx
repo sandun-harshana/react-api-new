@@ -46,7 +46,8 @@ function App() {
               src={product.image}
               alt={product.description}
             />
-            <span>{product.price}</span>
+            <span>Price : {product.price}</span>
+            <span> Rating : {product.rating.rate}</span>
           </li>
         ))}
       </ul>
