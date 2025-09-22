@@ -39,7 +39,7 @@ function App() {
     <>
       <ul>
         {products.map((product) => (
-          <li key={product.id}>
+          <li style={{"marginBottom":"2em","borderBottom":"1px solid grey"}} key={product.id}>
             {product.title}{" "}
             <img
               style={{ width: "100px", display: "block" }}
@@ -47,7 +47,7 @@ function App() {
               alt={product.description}
             />
             <span>Price : {product.price}</span>
-            <span> Rating : {product.rating.rate}</span>
+            <span style={{"display":"block"}}>Rating : {product.rating.rate}</span>
           </li>
         ))}
       </ul>
